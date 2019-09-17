@@ -3,7 +3,11 @@ CSC 4792 is a data mining course offered to fourth year students pursuing Bachel
 
 ## Content
   -[Introduction]()
+  
   -[Linear Methods for Regression]()
+  
   -[Linear Methods for Classification]()
+  
   -[Methods for Clustering]()
+  
   -[Anomaly Detection]()
