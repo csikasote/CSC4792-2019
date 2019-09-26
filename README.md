@@ -9,6 +9,7 @@ CSC 4792 is a data mining course offered to fourth year students pursuing Bachel
   - [Ridge Regression]()
   - [Multivariate Linear Regression]()
   - [Artificial neural Network]()
+  
 [Linear Methods for Classification](classification)
   
   - [Naive Bayes]()
