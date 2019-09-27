@@ -1,4 +1,4 @@
-## CSC 4792-Data Mining
+## CSC 4792 - DATA MINING
 CSC 4792 is a data mining course offered to fourth year students pursuing Bachelor of Computer Science at University of Zambia. This repository contains the Python implementations of some methods for data mining tasks discussed in class.
 
 [Regression](regression)
@@ -19,7 +19,7 @@ CSC 4792 is a data mining course offered to fourth year students pursuing Bachel
   - [Support Vector Machines](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/support%20vector%20machine)
   - [Artificial Neural Networks](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/artificial%20neural%20network)
 
-## Useful resources and references
+### Useful resources and references
 - James, G., Witten, D., Hastie, T. & Tibshirani, R., 2017. [An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/). New York: Springer.
 - CS229 - [Machine Learning](http://cs229.stanford.edu/) course, Stanford University
 - Geron, A., 2017. Hands-On Machine Learning with Scikit-learn & Tensorflow. Sepastopol: O`reilly.
