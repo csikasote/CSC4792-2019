@@ -19,8 +19,6 @@ def plot_dataset(X, y=None):
     plt.scatter(X[:, 0], X[:, 1], 
                 c='white', marker='o', 
                 edgecolor='black', s=50,label='Training data points')
-    plt.grid(True)
-    plt.tight_layout()
     plt.xlabel("sepal length", fontsize=14)
     plt.ylabel("sepal width", fontsize=14)
  
@@ -33,8 +31,6 @@ def plot_clusters(X,y):
                 s=50, c='orange',
                 marker='v', edgecolor='black',
                 label='class 2')
-    plt.grid(True)
-    plt.tight_layout()
     plt.xlabel("sepal length", fontsize=14)
     plt.ylabel("sepal width", fontsize=14)
 
