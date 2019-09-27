@@ -18,6 +18,10 @@ CSC 4792 is a data mining course offered to fourth year students pursuing Bachel
   - [Linear Discriminant Analysis](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/linear%20discriminant%20analysis)
   - [Support Vector Machines](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/support%20vector%20machine)
   - [Artificial Neural Networks](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/artificial%20neural%20network)
+  
+[Clustering](clustering)
+
+  - [K-Means Algorithm](https://github.com/csikasote/csc4792-data-mining/tree/master/clustering/kmeans)
 
 ### Useful resources and references
 - James, G., Witten, D., Hastie, T. & Tibshirani, R., 2017. [An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/). New York: Springer.
