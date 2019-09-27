@@ -19,3 +19,10 @@ CSC 4792 is a data mining course offered to fourth year students pursuing Bachel
   - [Linear Discriminant Analysis](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/linear%20discriminant%20analysis)
   - [Support Vector Machines](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/support%20vector%20machine)
   - [Artificial Neural Networks](https://github.com/csikasote/csc4792-data-mining/tree/master/classification/artificial%20neural%20network)
+
+## Useful resources and references
+- James, G., Witten, D., Hastie, T. & Tibshirani, R., 2017. [An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/). New York: Springer.
+- CS229 - [Machine Learning](http://cs229.stanford.edu/) course, Stanford University
+- Geron, A., 2017. Hands-On Machine Learning with Scikit-learn & Tensorflow. Sepastopol: O`reilly.
+- Marsland, S., 2015. Machine Learning: An Algorithmic Perspective. s.l.:CRC press.
+- Raschka, S. & Mirjalili, V., 2017. Python Machine Learning. Birmingham: Packt.
