@@ -22,7 +22,9 @@ def hypothesis(X, theta):
     return np.dot(X,theta)
 
 def feature_standardise(X):
-    return (X-X.mean(axis=0))/(X.max(axis=0) - X.min(axis=0))
+    mu = X.mean(axis=0)
+    x_range = X.max(axis=0) - X.min(axis=0)
+    return (X-X.mean(axis=0))/(X.max(axis=0) - X.min(axis=0)), mu, x_range
 
 def cost_function(theta, X, y):
     h = hypothesis(X, theta)
@@ -57,7 +59,7 @@ def plot_decision_boundary(X,y,theta):
     x_vals = np.array(ax.get_xlim())
     y_vals = -1 * np.divide(((np.multiply(theta[1],x_vals)) + theta[0]),theta[2])
     plt.plot(x_vals, y_vals, '--', c="red", label='Decision Boundary')
-    titlestr = 'Log. regression decision boundary(Model: h(x) = %.2f + %.2fx1 + %.2fx2)' % (theta[0], theta[1], theta[2])
+    titlestr = 'Model: h(x) = %.2f + %.2fx1 + %.2fx2' % (theta[0], theta[1], theta[2])
     plt.title(titlestr)
     plt.grid(True)
     plt.legend()
@@ -71,3 +73,11 @@ def plot_dataset(X,y):
                 marker='v', edgecolor='black',
                 label='class 2')
     plt.tight_layout()
+
+
+def classify(X,theta):
+    probability = sigmoid(hypothesis(X,theta))
+    if probability>=0.5:
+        return "Faulty"
+    elif probability < 0.5:
+        return "Good"
