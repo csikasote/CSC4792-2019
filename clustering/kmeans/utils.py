@@ -76,7 +76,7 @@ def kmeans_model(X, initial_centroids, max_iters, plot_progress = False):
     centroids = initial_centroids;
     
     for i in range(max_iters):
-        print('K-Means iteration %d/%d...\n'% (i+1, max_iters))
+        #print('K-Means iteration %d/%d...\n'% (i+1, max_iters))
         # For each example in X, assign it to the closest centroid
         idx = find_closest_centroids(X, centroids)
         # Optionally, plot progress here
@@ -88,8 +88,20 @@ def kmeans_model(X, initial_centroids, max_iters, plot_progress = False):
             input('Press enter to continue ...')
         # Given the memberships, compute new centroids
         centroids = compute_centroids(X, idx, K);
-    print('\nK-Means Done.')
+    #print('\nK-Means Done.')
     return centroids, idx
+
+def findBestInitialCentroid(K,X,max_iters, num_iters):
+    # Finding the initialization that gives the lowest distortion
+    distortions = np.zeros((num_iters))
+    centroidsList = []
+    for i in range(num_iters):
+        initial_centroids = initialize_centroids(X, K)
+        centroidsList.append(initial_centroids)
+        centroids, idx = kmeans_model(X, initial_centroids, max_iters)
+        distortions[i] = compute_distortion(X,idx,centroids)
+    # Return the best initial centroid and the distortion
+    return np.array(centroidsList[np.argmin(distortions)]), np.min(distortions)
 
 def compute_distortion(X,idx,centroids):
     dists = L2(X,centroids)

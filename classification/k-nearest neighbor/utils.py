@@ -39,6 +39,7 @@ class KNearestNeighbor(object):
         """ X is N x D where each row is an example. Y is 1-dimension of size N """
         self.X = X
         self.y = y
+    
     def distance(self,Xtest):
         """ Returns the L2 distance between the ith test example and jth training example"""
         dists = np.zeros((Xtest.shape[0],self.X.shape[0]))
@@ -46,7 +47,10 @@ class KNearestNeighbor(object):
             for j in range(self.X.shape[0]):
                 dists[[i],[j]] = np.sqrt(np.sum(np.square(self.X[[j],:] - Xtest[[i],:]), axis=1))
         return dists
-
+    '''
+    def distance(self,Xtest):
+        return np.sqrt(np.sum(np.square(self.X - Xtest), axis=1))
+    '''
     def majority_vote(self, labels):
         """ Return the most common class among the k nearest neighbors """
         return np.bincount(labels[0]).argmax()
@@ -67,5 +71,7 @@ def knn_decision(idx):
         return "Do Not Contact Customer!"
     elif idx == 1:
         return "Contact Customer!"
+
+
     
     
